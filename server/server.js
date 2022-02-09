@@ -10,6 +10,6 @@ app.get('/' , (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'))
 })
 
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 4005
 
-app.listen(4000, () => console.log(`server running on 4000`))
+app.listen(port, () => console.log(`server running on ${port}`))
